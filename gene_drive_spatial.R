@@ -39,6 +39,9 @@ gd <- function(input) {
   ######################
   ## ---- Functions ----
   ######################
+  
+  # Load in C++ euclidean distance functions
+  Rcpp::sourceCpp("../euclideandistance.cpp")
 
   ## calculate population growth rate from population projection matrix
   r.func <- function(x) log(Re((eigen(x)$values)[1]))
@@ -605,9 +608,6 @@ gd <- function(input) {
 
     supp.pop
   }
-  
-  # Load in C++ euclidean distance functions
-  Rcpp::sourceCpp("/Users/s2018147/Documents/Working directory/euclideandistance.cpp")
   
   # Radial Basis Function to pick males who participate in mating chase
   RBF = function(dist, gamma){
