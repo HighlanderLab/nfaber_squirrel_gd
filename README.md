@@ -1,5 +1,5 @@
 This git repository contains the code used to model gene drives in a squirrel 
-population. The model is adapted from Prowse et al. (2017) by N.R. Faber et al.
+population. The model is adapted from Prowse et al. (2017) by Faber et al.
 (2021). 
 
 To run the code:
